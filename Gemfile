@@ -8,6 +8,9 @@ gem 'rails', '3.2.1'
 gem 'mongoid'
 gem 'bson_ext'
 gem 'thin'
+gem 'kaminari'
+gem 'koala'
+gem 'mongoid-paperclip', :require => "mongoid_paperclip"
 
 # Gems used only for assets and not required
 # in production environments by default.
