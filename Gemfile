@@ -11,6 +11,7 @@ gem 'thin'
 gem 'kaminari'
 gem 'koala'
 gem 'mongoid-paperclip', :require => "mongoid_paperclip"
+gem 'therubyracer'
 
 # Gems used only for assets and not required
 # in production environments by default.

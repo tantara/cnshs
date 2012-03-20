@@ -21,7 +21,7 @@ $(function(){
 			message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
 			
 			if(newYear){
-				message += "left until REALEASE!";
+				message += "left until RELEASE!";
 			}
 			else {
 				message += "left to 10 days from now!";
