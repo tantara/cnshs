@@ -1,0 +1,28 @@
+<p class="note">Twitter for CNSHS</p>
+<div id="countdown"></div>
+<p class="note">2012. 07. 01</p>
+<!-- <p id="note"></p> -->
+
+<p id="propose-link"><%= link_to_function "이것을 추가해주세요!", "$('#propose-link').remove();$('#propose-form').fadeIn();" %></p>
+
+<div id="propose-form" style="display:none;">
+   <%= form_for @propose, :remote => true do |f| -%>
+      <p id="notice">* 작성자, 내용을 모두 채워주세요.</p>
+      <%= f.label :name, "작성자", :style => "display: inline;" %>
+      <%= f.text_field :name, :style => "width:140px;", :class => "clearfix" %><br />
+      <%= f.text_area :contents, :style => "width: 490px;height:46px;" %>
+      <%= f.submit "제안하기", :class => "btn", :style => "float: right;" %>
+   <% end -%>
+
+   <ul id="propose-list">
+      <% @proposes.each do |propose| %>
+         <%= render propose %>
+      <% end %>
+   </ul>
+</div>
+
+<p id="browser">Optimized for<br />IE9 | Chrome | Firefox | Safari | Opera</p>
+
+<footer>
+<div class="tzine" href="http://tantara.me">Develeoped by <i>CNSHS 15th <a href="http://facebook.com/taekmin.kim">Taekmin Kim</a><b> <a href="http://tantara.me">tantara.me</a></b></i></div>
+</footer>

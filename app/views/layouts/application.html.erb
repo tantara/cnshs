@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Twitter for CNSHS</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
-
-  </body>
+   <head>
+      <title>Twitter for CNSHS</title>
+      <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+   </head>
+   <body>
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+   </body>
 </html>

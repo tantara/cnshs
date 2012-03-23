@@ -1,0 +1,2 @@
+module ProposesHelper
+end

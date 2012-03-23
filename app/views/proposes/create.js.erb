@@ -1,0 +1,7 @@
+<% if @save %>
+   $('#propose_name').val("");
+   $('#propose_contents').val("");
+   <% propose = @propose %>
+   $('#propose-list').prepend('<%= escape_javascript render(propose) %>');
+<% end %>
+alert('<%= @msg %>');
